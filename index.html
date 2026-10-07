@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#2563eb"><meta name="description" content="保存在本机的北京时间管理器">
+  <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="拾时">
+  <title>拾时 · 时间管理器</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+  <script src="core.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header><div class="brand"><span class="brand-icon">◷</span>拾时<span class="brand-sub">时间管理器</span></div><div id="today"></div></header>
+    <div id="storage-error" role="alert" hidden></div>
+    <main id="main"></main>
+    <nav aria-label="主导航" id="navigation"></nav>
+  </div>
+  <dialog id="editor"><form id="editor-form"><div class="modal-heading"><h2 id="modal-title"></h2><button type="button" class="close" aria-label="取消并关闭">×</button></div><div id="fields"></div><p id="form-error" role="alert"></p><div class="actions"><button type="button" class="cancel">取消</button><button type="submit" class="primary">保存</button></div></form></dialog>
+  <div id="toast" role="status"></div>
+</body></html>
