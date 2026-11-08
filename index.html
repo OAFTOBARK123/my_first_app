@@ -6,13 +6,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="拾时">
   <title>拾时 · 时间管理器</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
-  <script src="core.js" defer></script><script src="app.js" defer></script>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=1.1.0">
+  <script src="core.js?v=1.1.0" defer></script><script src="app.js?v=1.1.0" defer></script>
 </head>
 <body>
   <div class="shell">
-    <header><div class="brand"><span class="brand-icon">◷</span>拾时<span class="brand-sub">时间管理器</span></div><div id="today"></div></header>
+    <header><div><div class="brand"><span class="brand-icon">◷</span>拾时<span class="brand-sub">时间管理器</span></div><span class="version">v1.1.0</span></div><div id="today"></div></header>
     <div id="storage-error" role="alert" hidden></div>
+    <div id="update-banner" hidden>新版已准备好。<button id="update-button" type="button">更新并重新打开</button></div>
     <main id="main"></main>
     <nav aria-label="主导航" id="navigation"></nav>
   </div>
